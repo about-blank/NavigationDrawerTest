@@ -42,9 +42,9 @@ public class MainActivity extends AppCompatActivity {
 //            getSupportActionBar().setHomeButtonEnabled(true);
         }
 
-        DrawerItemClickListener drawerLisetener = new DrawerItemClickListener();
-        listView.setOnItemClickListener(drawerLisetener);
-        listView.setOnScrollListener(drawerLisetener);
+        DrawerItemClickListener drawerListener = new DrawerItemClickListener();
+        listView.setOnItemClickListener(drawerListener);
+        listView.setOnScrollListener(drawerListener);
 
         listView.bringToFront();
         drawerLayout.requestLayout();
